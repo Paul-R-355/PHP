@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-size: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+form{
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 3px grey;
+    border-top: 4px solid #536DFE;
+}
+
+form input[type=text],  /*accedemos a los imputs usados*/
+form input[type=email],
+form input[type=password],
+form textarea{
+    border: 1px solid #536DFE;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #141938;
+}
+
+form input[type=text]:focus,  /*accedemos a los imputs usadospara generar efecto de marcado con el puntero*/ 
+form input[type=email]:focus,
+form input[type=password]:focus,
+form textarea :focus{
+    border: 2px solid #3F515B;
+    padding: 15px;
+ 
+}
+
+form textarea{
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 300;
+    min-width: 150;
+}
+
+.alert.error{
+    background: #F2DEDE;
+    border: 1PX solid #a94442;
+    color:  #a94442;
+}
+
+.alert.succsess{
+
+    background: #35b36d;
+    border: 1PX solid #58af5b;
+    color:  #fff;
+    
+}
+
+.btn,
+    form input[type=submit]{
+        padding: 10px;
+        background: #324ff5;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        cursor: pointer;
+
+    }
