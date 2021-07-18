@@ -22,16 +22,19 @@ if (isset($_POST['submit'])) { //valido recepcion de formulario
 
     if (!empty($correo)){
 
-        filter_var($correo, FILTER_SANITIZE_EMAIL); //SANEAMOS LE CADENA REMOVIENDO TODO LOS SIGNOS QUE NO DEBEN IR
-        filter_var($correo, FILTER_VALIDATE_EMAIL); //validamos LE CADENA REMOVIENDO TODO LOS SIGNOS QUE NO DEBEN IR
-        echo 'tu correo es'. $correo . '</br>';
+        $correo = filter_var($correo, FILTER_SANITIZE_EMAIL); //SANEAMOS LE CADENA REMOVIENDO TODO LOS SIGNOS QUE NO DEBEN IR        
+        //$correo = filter_var($correo, FILTER_VALIDATE_EMAIL); //validamos LE CADENA REMOVIENDO TODO LOS SIGNOS QUE NO DEBEN IR
+        if ((filter_var($correo, FILTER_VALIDATE_EMAIL))) {
+            echo 'tu correo es'. $correo . '</br>';
+        }else{
+            echo 'INCORRECTO INCORRECTO tu correo es'. $correo . '</br>';
+        }
+        
+
     }else{
         $errores .= 'Por favor agrega un correo valido'; //errores  concatenado deeste texto
     }
-    
 
-    echo 'tu nombre es'. $nombre . '</br>';
-    echo 'tu correo es'. $correo . '</br>';
 }
 
 ?>
