@@ -3,6 +3,7 @@
 //private solo accedidos en la clase creada
 //protected accedidos desde dentro de laas cases y heredero 
 //public accedidis de cualquier parte
+
 class Usuario{
     public  $nombre;
     public  $correo;
