@@ -21,17 +21,14 @@ class PersonaSt{
             return 'Hola buen dia';
         }
     }
-
 }
 
 echo PersonaSt::$mes; ///acedo al velor sin instanmcia un objeto tipo persona
 echo PersonaSt::saludoEstatico();
 echo PersonaSt::saludoEstatico('Paul');
 
-
 //instancia de la clase
 $paul=new PersonaSt('7 de septiembre');
 echo $paul->saludo();
 echo $paul->dia;
-
 ?>

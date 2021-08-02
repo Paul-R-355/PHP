@@ -7,7 +7,6 @@ $_SESSION['nombre']='Carlos';//variable que permite por medio del id se establec
 //sesion se pierde al cerrar el navegador web
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
