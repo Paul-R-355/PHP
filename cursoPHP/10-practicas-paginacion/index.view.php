@@ -47,7 +47,6 @@
             <?php else: ?>
                 <li><a href="?pagina= <?php + 1 ?>  ">&raquo;</a></li>
             <?php endif ?>
-
         </ul>
     </section>
     </div>

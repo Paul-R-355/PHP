@@ -8,7 +8,7 @@ try {
     echo 'CONEXION OK </br>';
 
     //$statement = $conexion->prepare('SELECT * FROM usuarios where id = :id;'); //:id es un place older
-    $statement = $conexion->prepare('SELECT * FROM usuarios'); //:id es un place older
+    $statement = $conexion->prepare('SELECT * FROM usuario'); //:id es un place older
     $statement->execute(array(':id' => $id, ':id'=>3));//recive parametro en forma de arreglo y aqui envio el parametro id
     //$resultados = $statement->fetch();//fetch solo trae uno 
     $resultados = $statement->fetchAll();//fetchAll trae todo 
