@@ -15,7 +15,7 @@ $postPorPagina=30;
 $inicio = ($pagina > 1) ? ($pagina * $postPorPagina - $postPorPagina) : 0; //Para saber de donde traere los articulos
 
 //SQL_CALC_FOUND_ROWS  para saber cuantos articulos trajimos en total
-$resultados=$conexion->query("SELECT SQL_CALC_FOUND_ROWS * FROM usuarios LIMIT $inicio, $postPorPagina;");//consultas sencillas sin concatenar la variable
+$resultados=$conexion->query("SELECT SQL_CALC_FOUND_ROWS * FROM usuario LIMIT $inicio, $postPorPagina;");//consultas sencillas sin concatenar la variable
 $articulos = $resultados->fetchAll();
 
 if(!$articulos){
@@ -31,7 +31,5 @@ $numeroPaginas = ceil($totalArticulos/$postPorPagina);
 
 
 require 'index.view.php'
-
-
 
 ?>

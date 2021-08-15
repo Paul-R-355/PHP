@@ -3,7 +3,7 @@
 
 $conexion = mysql_connect('localhost','root','') or die('no se pudo conectara la DB');
 mysql_select_db('prueba_consola',$conexion);
-$resultados=mysql_query('SELECT * FROM usuarios;');
+$resultados=mysql_query('SELECT * FROM usuario;');
 
 //-------------------------
 
