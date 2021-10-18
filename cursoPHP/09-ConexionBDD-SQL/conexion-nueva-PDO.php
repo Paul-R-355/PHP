@@ -5,7 +5,7 @@ try {
     $conexion= new PDO('mysql:host=127.0.0.1;dbname=prueba_consola','root','');//los ultimos parametros son usuario y contrasenia
     echo 'CONEXION OK </br>';
 
-    $resultados=$conexion->query('SELECT * FROM usuarios;');//consultas sencillas sin concatenar la variable
+    $resultados=$conexion->query('SELECT * FROM usuario;');//consultas sencillas sin concatenar la variable
 
     foreach ($resultados as $key => $fila) {//iteramos los arreglos de filas
        //print_r($fila);

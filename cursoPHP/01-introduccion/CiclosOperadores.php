@@ -1,3 +1,4 @@
+
 <?php
 
 echo '<h1>Recorrer areglos WHILE</h1>';
@@ -21,7 +22,7 @@ $a=0;
 //se ejecuta al menos una vez para pasar despues a la condicion
 do {    
     echo $arreglo_meses[$a] . '</br>';
-    $a=$a+1;    
+    $a=$a+1;
 } while ($arreglo_meses[$a]!='Diciembre');
 
 
